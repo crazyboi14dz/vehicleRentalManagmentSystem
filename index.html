@@ -124,7 +124,43 @@
         </div>
       </nav>
       <!-- navbar -->
+      <!-- Search-form in mobile and tablet mode -->
+      <div class="d-flex justify-content-center">
+        <form
+          action=""
+          class="col-4 d-block d-lg-none position-absolute z-1 w-50 pt-5 pb-3 px-2 mt-lg-5 ms-lg-5 mt-md-2 bg-white text-center rounded shadow"
+          style="margin-top: 25px;"
+        >
+          <!-- style="margin: -25px 0px 20px 0px" -->
+          <h3 class="col-12">Vehicle Rent</h3>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            class="form-control col-12 mb-3"
+            placeholder="Select city"
+          />
+          <input
+            type="text"
+            name="start_time"
+            id="start_time"
+            placeholder="Start time"
+            class="col-6 form-control mb-3"
+          />
+          <input
+            type="text"
+            name="end_time"
+            id="end_time"
+            placeholder="End time"
+            class="col-6 form-control mb-3"
+          />
 
+          <button type="button" class="col-12 btn btn-outline-success mt-2">
+            Search
+          </button>
+        </form>
+      </div>
+      <!-- Search-form in mobile and tablet mode -->
       <!-- carousel -->
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div
@@ -155,9 +191,10 @@
         <div class="carousel-inner">
           <!-- Search-form -->
 
+          <!-- class added d-none , d-lg-block in form tag -->
           <form
             action=""
-            class="col-4 position-absolute z-1 w-lg-25 w-md-100 pt-5 pb-3 px-2 mt-lg-5 ms-lg-5 mt-md-2 bg-white text-center rounded shadow"
+            class="col-4 d-none d-lg-block position-absolute z-1 w-lg-25 w-md-100 pt-5 pb-3 px-2 mt-lg-5 ms-lg-5 mt-md-2 bg-white text-center rounded shadow"
           >
             <!-- style="margin: -25px 0px 20px 0px" -->
             <h3 class="col-12">Vehicle Rent</h3>
@@ -251,7 +288,7 @@
       <!-- Featured -->
 
       <div class="container my-5">
-        <h3 class="text-secondary">Featured</h3>
+        <h3 class="text-secondary pt-5">Featured</h3>
         <div class="row">
           <div class="col-lg-4 col-md-12">
             <div class="card bg-white p-2 my-2">
@@ -380,11 +417,7 @@
           <div class="col-lg-4 col-md-12">
             <div class="card bg-white p-2 my-2">
               <div class="row">
-                <img
-                  class="col-6"
-                  src="images/car-1.png"
-                  width="100"
-                />
+                <img class="col-6" src="images/car-1.png" width="100" />
                 <div class="col-6">
                   <p class="">
                     incidunt adipisci tempore maiores fuga nobis, impedit
@@ -398,11 +431,7 @@
           <div class="col-lg-4 col-md-12 rounded">
             <div class="card bg-white p-2 my-2">
               <div class="row">
-                <img
-                  class="col-6"
-                  src="images/car-1.png"
-                  width="100"
-                />
+                <img class="col-6" src="images/car-1.png" width="100" />
                 <div class="col-6">
                   <p class="">
                     incidunt adipisci tempore maiores fuga nobis, impedit
@@ -416,11 +445,7 @@
           <div class="col-lg-4 col-md-12">
             <div class="card bg-white p-2 my-2">
               <div class="row">
-                <img
-                  class="col-6"
-                  src="images/car-1.png"
-                  width="100"
-                />
+                <img class="col-6" src="images/car-1.png" width="100" />
                 <div class="col-6">
                   <p class="">
                     incidunt adipisci tempore maiores fuga nobis, impedit
