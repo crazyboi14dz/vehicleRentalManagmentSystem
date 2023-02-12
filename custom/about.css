@@ -1,0 +1,231 @@
+/*  rq-content-block  */
+.rq-content-block,
+.rq-footer,
+.rq-main-footer,
+.rq-partners-section {
+  position: relative;
+  height: auto;
+}
+
+.rq-content-block {
+  width: 100%;
+  padding: 105px 0 90px;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .rq-content-block {
+    padding: 45px 0;
+  }
+}
+
+.rq-content-block.small-padding-top {
+  padding-top: 80px;
+}
+
+.rq-content-block.with-bg-img .rq-block-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: 9;
+  background-color: rgba(22, 29, 36, 0.8);
+}
+
+.rq-content-block.with-border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.rq-content-block.with-bg-color {
+  background: #efa80f;
+  overflow: hidden;
+}
+
+.rq-content-block.no-bottom-padding {
+  padding: 105px 0 0;
+}
+
+@media (max-width: 768px) {
+  .rq-content-block.no-bottom-padding {
+    padding: 60px 0 0;
+  }
+}
+
+.rq-content-block.vertical-line:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+@media (min-width: 1500px) {
+  .rq-content-block.vertical-line:before {
+    width: 1px;
+  }
+}
+
+@media (max-width: 992px) {
+  .rq-content-block.vertical-line:before {
+    display: none;
+  }
+}
+
+.blog-post-single-wrapper .rq-content-block {
+  top: -90px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .blog-post-single-wrapper .rq-content-block {
+    top: 0;
+    margin: 25px 0 37.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* gray-bg */
+.rq-content-block.gray-bg {
+  background: #f3f3f3;
+}
+
+/* rq-mission-block */
+@media (max-width: 480px) {
+  .rq-mission-block,
+  .rq-tips-tricks .rq-tips-single:hover {
+    box-shadow: 0 24px 34px -14px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.rq-mission-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+}
+
+.rq-mission-block .mission-content {
+  position: relative;
+  padding: 65px 0;
+}
+
+.rq-mission-block .mission-content .rq-title {
+  position: relative;
+  padding-bottom: 45px;
+  margin-bottom: 0;
+}
+
+.rq-mission-block .mission-content .rq-title .rq-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  display: block;
+  height: 1px;
+  background: #000;
+}
+
+.rq-mission-block .mission-content .mission-text {
+  margin: 0;
+  padding: 60px 0 60px 55px;
+}
+
+@media (max-width: 768px) {
+  .rq-mission-block .mission-content .mission-text {
+    padding: 30px;
+  }
+}
+
+.rq-mission-block .mission-content address {
+  font-style: normal;
+  padding-left: 55px;
+}
+
+.rq-mission-block .mission-content address a {
+  color: #000;
+  font-weight: 600;
+}
+
+.rq-mission-block .mission-content address a:hover {
+  color: #93d2e3;
+}
+
+.rq-mission-block .mission-content address cite {
+  font-style: normal;
+}
+
+.rq-mission-block .mission-image {
+  position: relative;
+  height: 443px;
+  margin: 30px;
+  background: #93d2e3;
+}
+
+@media (max-width: 768px) {
+  .rq-mission-block .mission-content address {
+    padding: 0 30px;
+  }
+
+  .rq-mission-block .mission-image {
+    display: none;
+  }
+}
+
+.rq-mission-block .mission-image img {
+  position: absolute;
+  top: 136px;
+  width: 100%;
+  /* left: -38px; */
+}
+
+@media (max-width: 991px) {
+  .rq-mission-block .mission-image {
+    overflow: hidden;
+  }
+
+  .rq-mission-block .mission-image img {
+    width: 100%;
+    bottom: 50px;
+  }
+}
+
+/* mission-content */
+@media (max-width: 768px) {
+  .mission-content .rq-title {
+    padding-left: 30px;
+  }
+}
+
+/* rq-title */
+.rq-title {
+  margin: 0;
+  font-weight: 300;
+  padding-left: 55px;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+
+/* rq-dot */
+.rq-title .rq-dot,
+.rq-title strong {
+  color: #93d2e3;
+}
+
+/* rq-line */
+.rq-mission-block .mission-content .rq-title .rq-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  display: block;
+  height: 1px;
+  background: #000;
+}
+
