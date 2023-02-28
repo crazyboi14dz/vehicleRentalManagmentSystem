@@ -5,6 +5,9 @@
   --grey-color: grey;
   --title-fonts: "Futura PTM";
 }
+body {
+  font-family: "Times New Roman", Times, serif;
+}
 
 .theme-color {
   color: var(--primary-color);
@@ -53,6 +56,7 @@
 /*+++++ Slider container Start +++++*/
 
 ::-webkit-scrollbar {
+  width: 16px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
@@ -65,7 +69,8 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #2a9af6;
-} 
+}
+
 .slide-container {
   /* max-width: 1120px; */
   width: 100%;
@@ -92,7 +97,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 14px;
+  /* padding: 10px 14px; */
 }
 
 .image-slide-content {
@@ -101,16 +106,16 @@
 }
 
 .overlay {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  height: 100%; */
   width: 100%;
-  background: var(--primary-color);
-  border-radius: 25px 25px 0 25px;
+  /* background: var(--primary-color); */
+  border-radius: 25px 25px 0 0;
 }
 
-.overlay::before,
+/* .overlay::before,
 .overlay::after {
   content: "";
   position: absolute;
@@ -124,7 +129,7 @@
 .overlay::after {
   border-radius: 0 25px 0 0;
   background-color: var(--white-color);
-}
+} */
 
 .card-slide-image {
   position: relative;
@@ -180,11 +185,11 @@
 .swiper-pagination-bullet-active {
   background: #69a2d0;
 }
-@media screen and (max-width: 768px) {
-  .slide-content{
+@media (max-width: 768px) {
+  .slide-content-md {
     margin: 0 10px;
   }
-  .swiper-navBtn {
+  .swiper-navBtn-md {
     display: none;
   }
 }

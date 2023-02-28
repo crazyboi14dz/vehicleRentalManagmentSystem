@@ -1,60 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trying out</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js" />
-  </head>
 
-  <style>
-   
-  </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trying out</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js" />
+</head>
 
-  <body>
-    <div class="rq-page-content">
-      <div class="rq-content-block gray-bg">
-        <marquee class="bg-large-text-1 " direction="left">GHUMI</marquee>
-        <marquee class="bg-large-text-2" direction="right">GHUMI</marquee>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10">
-              <div class="rq-mission-block">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mission-content">
-                      <h1 class="rq-title">
-                        Our Mission<span class="rq-dot">.</span
-                        ><i class="rq-line"></i>
-                      </h1>
-                      <p class="mission-text">
-                        Our motive is to provide the rides and tours in a
-                        flexible price because living the life without exploring
-                        other stuffs like an dumb is such ridiclous thing you
-                        can do or think money is a paper but thats kind a
-                        license without that you can't survive the world so
-                        provide others with perfect price to rent a car,
-                        scooters, and luxuries for yourself, family or friends.
-                      </p>
-                      <address>
-                        <a
-                          href="https://linktr.ee/crazyboi_14dz"
-                          target="_blank"
-                          >CRAZYBOI</a
-                        >
-                        <cite>- CEO </cite>
-                      </address>
-                    </div>
+<style>
+/*+++++ Slider container Start +++++*/
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a9af6;
+}
+
+.slide-container {
+  /* max-width: 1120px; */
+  width: 100%;
+  /* background: var(--grey-color); */
+  padding: 40px 0;
+}
+
+.slide-content {
+  padding: 45px 20px;
+  margin: 0 40px;
+  /* background: red; */
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card-slide {
+  width: 320px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.image-slide-content,
+.card-slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-slide-content {
+  position: relative;
+  row-gap: 5px;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary-color);
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background: var(--primary-color);
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: var(--white-color);
+}
+
+.card-slide-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+.card-slide-image .card-slide-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.swiper-navBtn {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #118df3;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 40px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background: var(--primary-color);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #69a2d0;
+}
+@media (max-width: 768px) {
+  .slide-content-md {
+    margin: 0 10px;
+  }
+  .swiper-navBtn-md {
+    display: none;
+  }
+}
+/*+++++ Slider Bar End +++++*/
+</style>
+
+<body>
+  <div class="rq-page-content">
+    <div class="rq-content-block gray-bg">
+      <marquee class="bg-large-text-1 " direction="left">GHUMI</marquee>
+      <marquee class="bg-large-text-2" direction="right">GHUMI</marquee>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="rq-mission-block">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mission-content">
+                    <h1 class="rq-title">
+                      Our Mission<span class="rq-dot">.</span><i class="rq-line"></i>
+                    </h1>
+                    <p class="mission-text">
+                      Our motive is to provide the rides and tours in a
+                      flexible price because living the life without exploring
+                      other stuffs like an dumb is such ridiclous thing you
+                      can do or think money is a paper but thats kind a
+                      license without that you can't survive the world so
+                      provide others with perfect price to rent a car,
+                      scooters, and luxuries for yourself, family or friends.
+                    </p>
+                    <address>
+                      <a href="https://linktr.ee/crazyboi_14dz" target="_blank">CRAZYBOI</a>
+                      <cite>- CEO </cite>
+                    </address>
                   </div>
-                  <div class="col-md-6">
-                    <div class="mission-image">
-                      <img
-                        src="images/scooters.png"
-                        alt="block-transparent-img"
-                      />
-                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mission-image">
+                    <img src="images/scooters.png" alt="block-transparent-img" />
                   </div>
                 </div>
               </div>
@@ -63,7 +195,33 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+
+
+  <section class="slide-container swiper">
+    <div class="slide-content slide-content-md">
+      <div class="card-wrapper swiper-wrapper">
+
+        <div class="card-slide swiper-slide shadow">
+          <div class="image-slide-content">
+            <span class="overlay"></span>
+            
+            <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" class="card-slide-img"></div>
+          </div>
+          <div class="card-slide-content">
+            <h2 class="name">Abhishek</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+              quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+            <button class="btn btn-theme">View more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
 <!-- footer-road -->
 <!-- <div class="vehicle-section-divider night-rider">
