@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="custom/every-pg-custom.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
-
+    <!-- Services CSS -->
+    <link rel="stylesheet" href="custom/services.css">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
@@ -140,168 +141,291 @@
         </div>
 
     </header>
+
     <main class="container my-5">
-        <h1 class="section-title">Our Services</h1>
-        <div class="my-5">
-            <section class="row">
-                <div class="col-6">
-                    <div class=" card shadow remove-border mb-5">
-                        <div class="card-body theme-bg" style="border-top-right-radius: 12px;
+        <h1 class="section-title my-5">Our Services</h1>
+
+        <section class="row">
+            <div class="col-6">
+                <div class="card shadow remove-border mb-5">
+                    <!-- <div class="card-body theme-bg" style="border-top-right-radius: 12px;
                 border-top-left-radius: 12px;">
-                            <h5 class="card-title fw-bold  d-flex justify-content-center p-2 text-light">Four Wheelers</h5>
+            </div> -->
+            <img src="images/mercedes-vehicle.png" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+                        <h5 class="card-title fw-bold">Four Wheelers</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the
+                            card's content.</p>
                         </div>
-                        <img src="images/luxury.jpg" class="" alt="...">
-
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-theme">Check Out</a>
-                        </div>
-                    </div>
+                    <a href="#" class="btn btn-theme" style="border-top-left-radius:0;border-top-right-radius:0;">Check Out</a>
                 </div>
+            </div>
 
-                <div class="col-6">
-                    <div class=" card shadow remove-border mb-5">
-                        <div class="card-body theme-bg" style="border-top-right-radius: 12px;
+            <div class="col-6">
+                <div class="card shadow remove-border mb-5">
+                    <!-- <div class="card-body theme-bg" style="border-top-right-radius: 12px;
                 border-top-left-radius: 12px;">
-                            <h5 class="card-title  fw-bold d-flex justify-content-center p-2 text-light">Two Wheelers</h5>
+            </div> -->
+            <img src="images/scooty.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                        <h5 class="card-title  fw-bold">Two Wheelers</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the
+                            card's content.</p>
                         </div>
-                        <img src="images/scooty.png" class="" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-theme">Check Out</a>
+                    <a href="#" class="btn btn-theme" style="border-top-left-radius:0; border-top-right-radius:0;">Check Out</a>
+                </div>
+            </div>
+        </section>
+        
+        <h1 class="section-title my-5">Best Vehicles</h1>
+
+        <section class="slide-container swiper">
+            <div class="slide-content slide-content-md">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card-slide swiper-slide shadow">
+                        <div class="image-slide-content">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="images/audi-vehicle.png" alt="ridera" class="overlay" >
+                            <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera"
+                                        class="card-slide-img"></div> -->
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6"><b>Model</b>: Audi Q3</div>
+                            <div class="col-6"><b>Price</b>: $22/Per Day</div>
+                        </div>
+                        <div class="card-slide-content py-3">
+                            <!-- <h2 class="name">Abhishek</h2> -->
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+                                quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+                            <button class="btn btn-theme">View more</button>
+                        </div>
+                    </div>
+
+                    <div class="card-slide swiper-slide shadow">
+                        <div class="image-slide-content">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="images/fortuner-vehicle.png" alt="ridera" class="overlay" >
+                            <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera"
+                                        class="card-slide-img"></div> -->
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6"><b>Model</b>: Audi Q3</div>
+                            <div class="col-6"><b>Price</b>: $22/Per Day</div>
+                        </div>
+                        <div class="card-slide-content py-3">
+                            <!-- <h2 class="name">Abhishek</h2> -->
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+                                quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+                            <button class="btn btn-theme">View more</button>
+                        </div>
+                    </div>
+
+                    <div class="card-slide swiper-slide shadow">
+                        <div class="image-slide-content">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="images/force-vehicle.png" alt="ridera" class="overlay">
+                            <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera"
+                                        class="card-slide-img"></div> -->
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6"><b>Model</b>: Audi Q3</div>
+                            <div class="col-6"><b>Price</b>: $22/Per Day</div>
+                        </div>
+                        <div class="card-slide-content py-3">
+                            <!-- <h2 class="name">Abhishek</h2> -->
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+                                quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+                            <button class="btn btn-theme">View more</button>
+                        </div>
+                    </div>
+
+                    <div class="card-slide swiper-slide shadow">
+                        <div class="image-slide-content">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="images/ferari-vehicle.png" alt="ridera" class="overlay">
+                            <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" -->
+                            <!-- class="card-slide-img"></div> -->
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6"><b>Model</b>: Audi Q3</div>
+                            <div class="col-6"><b>Price</b>: $22/Per Day</div>
+                        </div>
+                        <div class="card-slide-content py-3">
+                            <!-- <h2 class="name">Abhishek</h2> -->
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+                                quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+                            <button class="btn btn-theme">View more</button>
+                        </div>
+                    </div>
+                    <div class="card-slide swiper-slide shadow">
+                        <div class="image-slide-content">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="images/audi-vehicle.png" alt="ridera" class="overlay">
+                            <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" -->
+                            <!-- class="card-slide-img"></div> -->
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6"><b>Model</b>: Audi Q3</div>
+                            <div class="col-6"><b>Price</b>: $22/Per Day</div>
+                        </div>
+                        <div class="card-slide-content py-3">
+                            <!-- <h2 class="name">Abhishek</h2> -->
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+                                quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+                            <button class="btn btn-theme">View more</button>
+                        </div>
+                    </div>
+                    <div class="card-slide swiper-slide shadow">
+                        <div class="image-slide-content">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="images/audi-vehicle.png" alt="ridera" class="overlay">
+                            <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" -->
+                            <!-- class="card-slide-img"></div> -->
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6"><b>Model</b>: Audi Q3</div>
+                            <div class="col-6"><b>Price</b>: $22/Per Day</div>
+                        </div>
+                        <div class="card-slide-content py-3">
+                            <!-- <h2 class="name">Abhishek</h2> -->
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+                                quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+                            <button class="btn btn-theme">View more</button>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="swiper-button-next swiper-navBtn "></div>
+            <div class="swiper-button-prev swiper-navBtn "></div>
+            <div class="swiper-pagination"></div>
+        </section>
 
-            <section class="slide-container swiper">
-                <div class="slide-content slide-content-md">
-                    <div class="card-wrapper swiper-wrapper">
+        <!-- Plans Start-->
+        <h1 class="section-title my-5">Our Plans</h1>
+        <section class="cards">
+            <article class="information card-plan shadow">
+                <span class="tag">Feature</span>
+                <h2 class="title">Never miss your important meetings</h2>
+                <p class="info">GHUMI-GHUMI tracks you for the day as you scheduled and you will never have
+                    to worry.</p>
+                <button class="button">
+                    <span>Learn more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="none">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z" fill="currentColor" />
+                    </svg>
+                </button>
+            </article>
+            <article class="plan card-plan shadow">
+                <div class="inner">
 
-                        <div class="card-slide swiper-slide shadow">
-                            <div class="image-slide-content">
-                                <!-- <span class="overlay"></span> -->
-                                <img src="images/ridera.jpg" alt="ridera"
-                                class="overlay">
-                                <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera"
-                                        class="card-slide-img"></div> -->
-                            </div>
-                            <div class="card-slide-content p-3">
-                                <h2 class="name">Abhishek</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
-                                    quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
-                                <button class="btn btn-theme">View more</button>
-                            </div>
-                        </div>
-
-                        <div class="card-slide swiper-slide shadow">
-                            <div class="image-slide-content">
-                                <!-- <span class="overlay"></span> -->
-                                <img src="images/ridera.jpg" alt="ridera"
-                                class="overlay">
-                                <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera"
-                                        class="card-slide-img"></div> -->
-                            </div>
-                            <div class="card-slide-content p-3">
-                                <h2 class="name">Abhishek</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
-                                    quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
-                                <button class="btn btn-theme">View more</button>
-                            </div>
-                        </div>
-
-                        <div class="card-slide swiper-slide shadow">
-                            <div class="image-slide-content">
-                                <!-- <span class="overlay"></span> -->
-                                <img src="images/ridera.jpg" alt="ridera"
-                                class="overlay">
-                                <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera"
-                                        class="card-slide-img"></div> -->
-                            </div>
-                            <div class="card-slide-content p-3">
-                                <h2 class="name">Abhishek</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
-                                    quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
-                                <button class="btn btn-theme">View more</button>
-                            </div>
-                        </div>
-
-                        <div class="card-slide swiper-slide shadow">
-                            <div class="image-slide-content">
-                                <!-- <span class="overlay"></span> -->
-                                <img src="images/ridera.jpg" alt="ridera"
-                                class="overlay">
-                                <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" -->
-                                        <!-- class="card-slide-img"></div> -->
-                            </div>
-                            <div class="card-slide-content p-3">
-                                <h2 class="name">Abhishek</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
-                                    quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
-                                <button class="btn btn-theme">View more</button>
-                            </div>
-                        </div>
-                        <div class="card-slide swiper-slide shadow">
-                            <div class="image-slide-content">
-                                <!-- <span class="overlay"></span> -->
-                                <img src="images/ridera.jpg" alt="ridera"
-                                class="overlay">
-                                <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" -->
-                                        <!-- class="card-slide-img"></div> -->
-                            </div>
-                            <div class="card-slide-content p-3">
-                                <h2 class="name">Abhishek</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
-                                    quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
-                                <button class="btn btn-theme">View more</button>
-                            </div>
-                        </div>
-                        <div class="card-slide swiper-slide shadow">
-                            <div class="image-slide-content">
-                                <!-- <span class="overlay"></span> -->
-                                <img src="images/ridera.jpg" alt="ridera"
-                                class="overlay">
-                                <!-- <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" -->
-                                        <!-- class="card-slide-img"></div> -->
-                            </div>
-                            <div class="card-slide-content p-3">
-                                <h2 class="name">Abhishek</h2>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                    consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
-                                    quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
-                                <button class="btn btn-theme">View more</button>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="pricing">
+                        <span>
+                            $56 <small>/ m</small>
+                        </span>
+                    </span>
+                    <h2 class="title">Professional</h2>
+                    <p class="info">This plan is for those who have a team already and running a large business.</p>
+                    <ul class="features">
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                                        fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span><strong>20</strong> team members</span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                                        fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Plan <strong>team meetings</strong></span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                                        fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>File sharing</span>
+                        </li>
+                    </ul>
+                    <button class="button">
+                        Choose plan
+                    </button>
                 </div>
-                <div class="swiper-button-next swiper-navBtn "></div>
-                <div class="swiper-button-prev swiper-navBtn "></div>
-                <div class="swiper-pagination"></div>
-            </section>
-        </div>
+            </article>
+            <article class="information card-plan shadow">
+                <h2 class="title">The only tool you need to schedule your day</h2>
+                <p class="info">Always keep updated with this simple tool on the go, when and where ever you need.</p>
+                <dl class="details">
+                    <div>
+                        <dt>Satisfaction</dt>
+                        <dd>100%</dd>
+                    </div>
+                    <div>
+                        <dt>Customers</dt>
+                        <dd>4.5K</dd>
+                    </div>
+                </dl>
+            </article>
+        </section>
+        <!-- Plans End -->
 
-
-        <div class="container p-5"></div>
-        <div class="container p-5"></div>
-        <div class="container p-5"></div>
-        <div class="container p-5"></div>
-        <div class="container p-5"></div>
-        <div class="container p-5"></div>
-        <div class="container p-5"></div>
 
     </main>
     <footer id="pq-footer">
+        <!-- places-1 start-->
+        <div class="d-flex">
+
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+            <img src="images/house-with-garden.png" width="60.79" alt="" srcset="">
+        </div>
+        <!-- places-1 end -->
+
         <!-- ghumi pavilionz start -->
         <div class="vehicle-section-divider">
             <div class="section-divider-content bg-dark">
@@ -313,6 +437,11 @@
             <!-- /.section-divider-content -->
             <!-- /.row -->
         </div>
+        <!-- places-2 start-->
+        <!-- places-2 end -->
+
+        <div class="container p-5"></div>
+
         <!-- ghumi pavilionz end -->
         <div class="pq-footer-style-1 bg-dark">
             <div class="pq-footer-top">

@@ -8,6 +8,9 @@
   <title>Trying out</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js" />
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+  <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <style>
@@ -200,6 +203,7 @@
 
 
   <section class="slide-container swiper">
+    
     <div class="slide-content slide-content-md">
       <div class="card-wrapper swiper-wrapper">
 
@@ -217,10 +221,92 @@
             <button class="btn btn-theme">View more</button>
           </div>
         </div>
+        <div class="card-slide swiper-slide shadow">
+          <div class="image-slide-content">
+            <span class="overlay"></span>
+            
+            <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" class="card-slide-img"></div>
+          </div>
+          <div class="card-slide-content">
+            <h2 class="name">Abhishek</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+              quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+            <button class="btn btn-theme">View more</button>
+          </div>
+        </div>
+        <div class="card-slide swiper-slide shadow">
+          <div class="image-slide-content">
+            <span class="overlay"></span>
+            
+            <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" class="card-slide-img"></div>
+          </div>
+          <div class="card-slide-content">
+            <h2 class="name">Abhishek</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+              quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+            <button class="btn btn-theme">View more</button>
+          </div>
+        </div>
+        <div class="card-slide swiper-slide shadow">
+          <div class="image-slide-content">
+            <span class="overlay"></span>
+            
+            <div class="card-slide-image"><img src="images/ridera.jpg" alt="ridera" class="card-slide-img"></div>
+          </div>
+          <div class="card-slide-content">
+            <h2 class="name">Abhishek</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              consequuntur nobis quod repellendus sint corrupti quia. Ullam cumque voluptatem quos
+              quod! Totam ullam eos culpa ducimus libero laudantium qui beatae.</p>
+            <button class="btn btn-theme">View more</button>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="swiper-button-next swiper-navBtn "></div>
+                <div class="swiper-button-prev swiper-navBtn "></div>
+                <div class="swiper-pagination"></div>
   </section>
 </body>
+<script src="swiper/swiper-bundle.min.js"></script>
+
+<script>
+  /*==================================================
+        [ Swiper JS slider ]
+        ==================================================*/
+  var swiper = new Swiper(".slide-content", {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      // slidesPerGroup: 3,
+      loop: true,
+      // loopFillGroupWithBlank: true,
+      centerSlide: 'true',
+      gragCursor: 'true',
+      fade: 'true',
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+          0: {
+              slidesPerView: 1,
+          },
+          520: {
+              slidesPerView: 2,
+          },
+          950: {
+              slidesPerView: 3,
+          },
+      },
+  });
+</script>
 
 </html>
 <!-- footer-road -->
