@@ -51,7 +51,7 @@
 }
 
 /*+++++ Slider container Start +++++*/
-/* 
+
 ::-webkit-scrollbar {
   height: 8px;
 }
@@ -60,12 +60,12 @@
   border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #6e93f7;
+  background: var(--primary-color);
   border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #4070f4;
-} */
+  background: #2a9af6;
+} 
 .slide-container {
   /* max-width: 1120px; */
   width: 100%;
@@ -106,7 +106,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   border-radius: 25px 25px 0 25px;
 }
 
