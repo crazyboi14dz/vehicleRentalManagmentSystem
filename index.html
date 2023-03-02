@@ -134,23 +134,26 @@
         </div>
 
         <!-- Search-form in mobile and tablet mode -->
-        <div class="d-flex justify-content-center">
+        <!-- <div class="d-flex justify-content-center">
             <form action=""
-                class="col-4 d-block d-lg-none position-absolute z-1 w-50 pt-5 pb-3 px-2 mt-lg-5 ms-lg-5 mt-md-2 bg-white text-center rounded shadow"
-                style="margin-top: 25px">
-                <!-- style="margin: -25px 0px 20px 0px" -->
-                <h3 class="col-12">Vehicle Rent</h3>
+                class="col-4 d-block d-lg-none position-absolute z-1 w-50 pt-5 pb-3 px-2 mt-lg-5 ms-lg-5 mt-md-2 bg-white rounded shadow"
+                style="margin-top: 25px"> -->
+        <!-- style="margin: -25px 0px 20px 0px" -->
+        <!-- <h3 class="col-12 text-center">Vehicle Rent</h3>
+                <label for="city"><strong>Location</strong></label>
                 <input type="text" name="city" id="city" class="form-control col-12 mb-3" placeholder="Select city" />
-                <input type="date" name="start_time" id="start_time" placeholder="Start time"
+                <label for="pickup_date"><strong>Pick Up Date</strong></label>
+                <input type="date" name="pickup_date" id="pickup_date"
                     class="col-6 form-control mb-3" />
-                <input type="date" name="end_time" id="end_time" placeholder="End time"
+                <label for="return_date"><strong>Return Date</strong></label>
+                <input type="date" name="return_date" id="return_date"
                     class="col-6 form-control mb-3" />
 
-                <button type="button" class="col-12 btn btn-outline-dark mt-2">
+                <button type="button" class="col-12 btn btn-theme mt-2">
                     Search
                 </button>
             </form>
-        </div>
+        </div> -->
         <!-- Search-form in mobile and tablet mode -->
 
         <!-- carousel -->
@@ -171,19 +174,33 @@
 
                 <!-- class added d-none , d-lg-block in form tag -->
                 <form action=""
-                    class="col-4 d-none d-lg-block position-absolute z-1 w-lg-25 w-md-100 pt-5 pb-3 px-2 mt-lg-5 ms-lg-5 mt-md-2 bg-white text-center rounded shadow">
+                    class="col-4 position-absolute z-1 w-lg-25 w-md-100 py-3 px-2 bg-white ms-lg-5 mt-2 rounded shadow">
                     <!-- style="margin: -25px 0px 20px 0px" -->
-                    <h3 class="col-12">Vehicle Rent</h3>
+                    
+                    <div class="col-12 text-center py-2">
+                        <img src="images/ghumi2.png" alt="GHUMI-GHUMI" width="150">
+                        <p class="text-secondary">Vehicle Rental in India <img src="images/india.svg" width="20" class="position-relative" style="bottom: 2px;" alt="india-flag"> </p>
+                    </div>
+                    <label for="city"><strong>Location</strong></label>
                     <input type="text" name="city" id="city" class="form-control col-12 mb-3"
                         placeholder="Select city" />
-                    <input type="date" name="start_time" id="start_time" placeholder="Start time"
-                        class="col-6 form-control mb-3" />
-                    <input type="date" name="end_time" id="end_time" placeholder="End time"
-                        class="col-6 form-control mb-3" />
+                    <label for="pickup_date"><strong>Pick Up Date</strong></label>
+                    <input type="date" name="pickup_date" id="pickup_date" class="col-6 form-control mb-3" />
+                    <label for="return_date"><strong>Return Date</strong></label>
+                    <input type="date" name="return_date" id="return_date" class="col-6 form-control mb-3" />
 
-                    <button type="button" class="col-12 btn  btn-outline-dark mt-2">
+                    <button type="button" class="col-12 btn  btn-theme mt-2">
                         Search
                     </button>
+                    <div class="row text-center position-relative" style="top: 8px;">
+                        <a class="col-6" href="https://play.google.com/">
+                            <img class="w-100" src="images/android-store.png" alt="android-store" >
+                        </a>
+                    
+                        <a class="col-6" href="https://www.apple.com/">
+                            <img class="w-100"  src="images/ios-store.png" alt="ios-store">
+                        </a>
+                </div>
                 </form>
 
                 <!-- Search-form -->
@@ -233,79 +250,81 @@
 
     <main>
 
-        <!-- Trying -->
-        <div class="container my-5">
-            <h3 class="text-secondary pt-5">Trying</h3>
+        <!-- Featured start -->
+        <div class="container ">
             <section class="slide-container swiper">
-                <div class="slide-content slide-content-md">
+                <h3 class="text-secondary ">Featured</h3>
+                <div class="slide-content   slide-content-md" >
                     <div class="card-wrapper swiper-wrapper">
 
                         <!-- card-1 -->
                         <!-- <div class="col-4"> -->
-                            <div class="card-slide swiper-slide shadow" style="width:380px;">
-                                <div class="row align-items-center">
-                                    <img class="col-6" src="images/car-rent-removebg-preview.png" />
-                                    <div class="col-6 pt-2">
-                                        <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                        <p class="text-secondary">
-                                            incidunt adipisci tempore maiores fuga nobis, impedit
-                                            quisquam repellat cumque culpa autem. Earum corporis in a
-                                            temporibus?
-                                        </p>
-                                    </div>
+
+                            <!-- data-swiper-autoplay is given for specific card speed perform -->
+                        <div class="card-slide swiper-slide shadow" data-swiper-autoplay="100" style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/car-rent-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
                                 </div>
                             </div>
+                        </div>
                         <!-- </div> -->
                         <!-- card-1 -->
                         <!-- card-2 -->
                         <!-- <div class="col-4"> -->
-                            <div class="card-slide swiper-slide shadow" style="width:380px;">
-                                <div class="row align-items-center">
-                                    <img class="col-6" src="images/car-wash-removebg-preview.png" />
-                                    <div class="col-6 pt-2">
-                                        <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                        <p class="text-secondary">
-                                            incidunt adipisci tempore maiores fuga nobis, impedit
-                                            quisquam repellat cumque culpa autem. Earum corporis in a
-                                            temporibus?
-                                        </p>
-                                    </div>
+                        <div class="card-slide swiper-slide shadow" style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/car-wash-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
                                 </div>
                             </div>
+                        </div>
                         <!-- </div> -->
                         <!-- card-2 -->
                         <!-- card-3 -->
                         <!-- <div class="col-4"> -->
-                            <div class="card-slide swiper-slide shadow " style="width:380px;">
-                                <div class="row align-items-center">
-                                    <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
-                                    <div class="col-6 pt-2">
-                                        <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                        <p class="text-secondary">
-                                            incidunt adipisci tempore maiores fuga nobis, impedit
-                                            quisquam repellat cumque culpa autem. Earum corporis in a
-                                            temporibus?
-                                        </p>
-                                    </div>
+                        <div class="card-slide swiper-slide shadow " style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
                                 </div>
                             </div>
+                        </div>
                         <!-- </div> -->
                         <!-- card-3 -->
                         <!-- card-4 -->
                         <!-- <div class="col-4"> -->
-                            <div class="card-slide swiper-slide shadow " style="width:380px;">
-                                <div class="row align-items-center">
-                                    <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
-                                    <div class="col-6 pt-2">
-                                        <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                        <p class="text-secondary">
-                                            incidunt adipisci tempore maiores fuga nobis, impedit
-                                            quisquam repellat cumque culpa autem. Earum corporis in a
-                                            temporibus?
-                                        </p>
-                                    </div>
+                        <div class="card-slide swiper-slide shadow " style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
                                 </div>
                             </div>
+                        </div>
                         <!-- </div> -->
                         <!-- card-4 -->
                     </div>
@@ -315,124 +334,75 @@
                 <div class="swiper-pagination"></div>
             </section>
         </div>
-        <!-- Trying end-->
-      
-        <!-- Featured -->
+        <!-- Featured end-->
 
-        <div class="container my-5">
-            <h3 class="text-secondary pt-5">Featured</h3>
-            <div class="row">
-
-                <div class="col-lg-4 col-md-12">
-                    <div class="card bg-white p-2 my-2">
-                        <div class="row align-items-center">
-                            <img class="col-6" src="images/car-rent-removebg-preview.png" />
-                            <div class="col-6 pt-2">
-                                <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                <p class="text-secondary">
-                                    incidunt adipisci tempore maiores fuga nobis, impedit
-                                    quisquam repellat cumque culpa autem. Earum corporis in a
-                                    temporibus?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 rounded">
-                    <div class="card bg-white p-2 my-2">
-                        <div class="row align-items-center">
-                            <img class="col-6" src="images/car-wash-removebg-preview.png" />
-                            <div class="col-6 pt-2">
-                                <p class="h4 fw-bolder text-uppercase">Wash before renting</p>
-                                <p class="text-secondary">
-                                    incidunt adipisci tempore maiores fuga nobis, impedit
-                                    quisquam repellat cumque culpa autem. Ear, impedit
-                                    quisquam repellat cumque culpa autem.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card bg-white p-2 my-2">
-                        <div class="row align-items-center">
-                            <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
-                            <div class="col-6 pt-2">
-                                <p class="h4 fw-bolder text-uppercase">Keys Placed To your place</p>
-                                <p class="text-secondary">
-                                    incidunt adipisci tempore maiores fuga nobis, impedit
-                                    quisquam repellat cumque culpa autem. Earum corporis in a
-                                    temporibus?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Featured -->
         <!-- Offers -->
-        <div class="container my-5">
-            <h3 class="text-secondary">Offers</h3>
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <div class="card bg-white p-2 my-2">
-                        <div class="row align-items-center">
-                            <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
-                            <div class="col-6 pt-2">
-                                <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                <p class="text-secondary">
-                                    incidunt adipisci tempore maiores fuga nobis, impedit
-                                    quisquam repellat cumque culpa autem. Earum corporis in a
-                                    temporibus?
-                                </p>
+        <div class="container">
+            <section class="slide-container swiper">
+                <h3 class="text-secondary">Offers</h3>
+                <div class="slide-content slide-content-md">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!--card-1  -->
+                        <div class="card-slide swiper-slide shadow" style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 rounded">
-                    <div class="card bg-white p-2 my-2">
-                        <div class="row align-items-center">
-                            <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
-                            <div class="col-6 pt-2">
-                                <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                <p class="text-secondary">
-                                    incidunt adipisci tempore maiores fuga nobis, impedit
-                                    quisquam repellat cumque culpa autem. Earum corporis in a
-                                    temporibus?
-                                </p>
+                        <!--card-1  -->
+                        <!--card-2  -->
+                        <div class="card-slide swiper-slide shadow" style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card bg-white p-2 my-2">
-                        <div class="row align-items-center">
-                            <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
-                            <div class="col-6 pt-2">
-                                <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
-                                <p class="text-secondary">
-                                    incidunt adipisci tempore maiores fuga nobis, impedit
-                                    quisquam repellat cumque culpa autem. Earum corporis in a
-                                    temporibus?
-                                </p>
+                        <!--card-2  -->
+                        <!--card-3  -->
+                        <div class="card-slide swiper-slide shadow" style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <!--card-3  -->
                     </div>
                 </div>
-            </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </section>
         </div>
 
         <!--Offers -->
         <!-- Why Choose Ghumi Ghumi  -->
 
-        <div class="container my-5">
+        <div class="container">
             <h3 class="text-secondary">Why Choose Ghumi Ghumi</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-12">
-                    <div class="card bg-white p-2 my-2">
+                    <div class="card bg-white p-2 my-2 shadow" style="border:0;">
                         <div class="row align-items-center">
                             <img class="col-6" src="images/luxury2.jpeg" />
                             <div class="col-6 pt-2">
@@ -447,7 +417,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 rounded">
-                    <div class="card bg-white p-2 my-2">
+                    <div class="card bg-white p-2 my-2 shadow" style="border:0;">
                         <div class="row align-items-center">
                             <img class="col-6" src="images/scooty.png" />
                             <div class="col-6 pt-2">
@@ -462,7 +432,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                    <div class="card bg-white p-2 my-2">
+                    <div class="card bg-white p-2 my-2 shadow" style="border:0;">
                         <div class="row align-items-center">
                             <img class="col-6" src="images/ridera.jpg" />
                             <div class="col-6 pt-2">
@@ -756,6 +726,7 @@
         centerSlide: 'true',
         gragCursor: 'true',
         fade: 'true',
+        autoplay: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
