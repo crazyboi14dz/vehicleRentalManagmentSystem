@@ -13,8 +13,16 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
     <style>
+        .side-nav {
 
-
+            position: relative;
+            /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1;
+            /* Stay on top */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 20px;
+        }
     </style>
     <!-- Bootstrap v5.3 -->
 </head>
@@ -137,6 +145,134 @@
 
     </header>
     <main>
+        <div class="d-flex">
+            <div class="col-4 side-nav" style="background: rgba(197, 198, 196, 0.418);">
+                <!-- Four Wheeler START -->
+                <div class="mt-3 ps-3">
+                    <input type="checkbox" name="classic" id="classic" checked>
+                    <label for=""><strong>Four Wheeler</strong></label>
+                </div>
+                <hr>
+                <div class="ps-3">
+                    <input type="checkbox" name="classic" id="classic" checked>
+                    <label for="traveller">Classic</label>
+                </div>
+                <div class="ps-3">
+                    <input type="checkbox" name="traveller" id="traveller" checked>
+                    <label for="traveller">Traveller</label>
+                </div>
+                <!-- Four Wheeler END -->
+
+                <!-- Two Wheeler START -->
+                <div class="mt-5 ps-3">
+                    <input type="checkbox" name="classic" id="classic">
+                    <label for=""><strong>Two Wheeler</strong></;>
+                </div>
+                <hr>
+                <div class="ps-3">
+                    <input type="checkbox" name="classic" id="classic">
+                    <label for="traveller">Classic</label>
+                </div>
+                <div class="ps-3">
+                    <input type="checkbox" name="traveller" id="traveller">
+                    <label for="traveller">Traveller</label>
+                </div>
+                <!-- Two Wheeler END -->
+
+                <!-- Luxuries START -->
+                <div class="mt-5 ps-3">
+                    <input type="checkbox" name="classic" id="classic">
+                    <label for=""><strong>Luxuries</strong></label>
+                </div>
+                <hr>
+                <div class="ps-3">
+                    <input type="checkbox" name="classic" id="classic">
+                    <label for="traveller">Classic</label>
+                </div>
+            </div>
+            <!-- Luxuries END -->
+
+
+            <div class="col-8 p-3" style="height: 80vh; overflow:auto; border-left: 1px solid #d4cece;">
+                <div class="row gap-4">
+
+                    <!-- card-1 -->
+                    <div class="col-4 card" style="width: 19rem;">
+                        <img src="images/bike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+
+                    <!-- card-2 -->
+                    <div class="col-4  card" style="width: 19rem;">
+                        <img src="images/bike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <!-- card-3 -->
+                    <div class="col-4  card" style="width: 19rem;">
+                        <img src="images/bike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <!-- card-4 -->
+                    <div class="col-4  card" style="width: 19rem;">
+                        <img src="images/bike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <!-- card-5 -->
+                    <div class="col-4  card" style="width: 19rem;">
+                        <img src="images/bike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- card-5 -->
+                    <!-- card-6 -->
+                    <div class="col-4  card" style="width: 19rem;">
+                        <img src="images/bike.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- card-6 -->
+                </div>
+
+            </div>
+        </div>
 
     </main>
     <footer id="pq-footer">

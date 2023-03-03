@@ -174,12 +174,13 @@
 
                 <!-- class added d-none , d-lg-block in form tag -->
                 <form action=""
-                    class="col-4 position-absolute z-1 w-lg-25 w-md-100 py-3 px-2 bg-white ms-lg-5 mt-2 rounded shadow">
+                    class="col-4 position-absolute z-1 w-lg-25 w-md-100 py-3 px-2 bg-white ms-lg-5 mt-lg-5 rounded shadow">
                     <!-- style="margin: -25px 0px 20px 0px" -->
-                    
+
                     <div class="col-12 text-center py-2">
                         <img src="images/ghumi2.png" alt="GHUMI-GHUMI" width="150">
-                        <p class="text-secondary">Vehicle Rental in India <img src="images/india.svg" width="20" class="position-relative" style="bottom: 2px;" alt="india-flag"> </p>
+                        <p class="text-secondary">Vehicle Rental in India <img src="images/india.svg" width="20"
+                                class="position-relative" style="bottom: 2px;" alt="india-flag"> </p>
                     </div>
                     <label for="city"><strong>Location</strong></label>
                     <input type="text" name="city" id="city" class="form-control col-12 mb-3"
@@ -192,7 +193,7 @@
                     <button type="button" class="col-12 btn  btn-theme mt-2">
                         Search
                     </button>
-                    <div class="row text-center position-relative" style="top: 8px;">
+                    <!-- <div class="row text-center position-relative" style="top: 8px;">
                         <a class="col-6" href="https://play.google.com/">
                             <img class="w-100" src="images/android-store.png" alt="android-store" >
                         </a>
@@ -200,7 +201,7 @@
                         <a class="col-6" href="https://www.apple.com/">
                             <img class="w-100"  src="images/ios-store.png" alt="ios-store">
                         </a>
-                </div>
+                </div> -->
                 </form>
 
                 <!-- Search-form -->
@@ -212,7 +213,7 @@
                         <img src="images/people-traveling.png" class="w-25" />
                         <div class="my-3">
                             <button class="btn btn-outline-light fw-bolder text-uppercase px-5">View</button>
-                            <button class="btn btn-light fw-bolder text-uppercase px-5">Book</button>
+                            <button class="btn btn-theme fw-bolder text-uppercase px-5">Book</button>
                         </div>
                     </div>
 
@@ -224,7 +225,7 @@
                             <img src="images/cycle.png" class="w-25" />
                             <div class="my-3">
                                 <button class="btn btn-outline-light fw-bolder text-uppercase px-5">View</button>
-                                <button class="btn btn-light fw-bolder text-uppercase px-5">Book</button>
+                                <button class="btn btn-theme fw-bolder text-uppercase px-5">Book</button>
                             </div>
                         </div>
                     </div>
@@ -236,7 +237,7 @@
                             <img src="images/ST_Desktop_1_FG.png" class="w-25" />
                             <div class="my-3">
                                 <button class="btn btn-outline-light fw-bolder text-uppercase px-5">View</button>
-                                <button class="btn btn-light fw-bolder text-uppercase px-5">Book</button>
+                                <button class="btn btn-theme fw-bolder text-uppercase px-5">Book</button>
                             </div>
                         </div>
                     </div>
@@ -250,17 +251,15 @@
 
     <main>
 
-        <!-- Featured start -->
-        <div class="container ">
+        <!-- Featured START -->
+        <div class="container">
+            <h3 class="text-secondary pt-5">Featured</h3>
             <section class="slide-container swiper">
-                <h3 class="text-secondary ">Featured</h3>
-                <div class="slide-content   slide-content-md" >
+                <div class="slide-content   slide-content-md">
                     <div class="card-wrapper swiper-wrapper">
 
                         <!-- card-1 -->
-                        <!-- <div class="col-4"> -->
-
-                            <!-- data-swiper-autoplay is given for specific card speed perform -->
+                        <!-- data-swiper-autoplay is given for specific card speed perform -->
                         <div class="card-slide swiper-slide shadow" data-swiper-autoplay="100" style="width:380px;">
                             <div class="row align-items-center">
                                 <img class="col-6" src="images/car-rent-removebg-preview.png" />
@@ -274,10 +273,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- </div> -->
+
                         <!-- card-1 -->
                         <!-- card-2 -->
-                        <!-- <div class="col-4"> -->
+
                         <div class="card-slide swiper-slide shadow" style="width:380px;">
                             <div class="row align-items-center">
                                 <img class="col-6" src="images/car-wash-removebg-preview.png" />
@@ -291,10 +290,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- </div> -->
+
                         <!-- card-2 -->
                         <!-- card-3 -->
-                        <!-- <div class="col-4"> -->
+
                         <div class="card-slide swiper-slide shadow " style="width:380px;">
                             <div class="row align-items-center">
                                 <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
@@ -308,10 +307,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- </div> -->
                         <!-- card-3 -->
                         <!-- card-4 -->
-                        <!-- <div class="col-4"> -->
+                        
                         <div class="card-slide swiper-slide shadow " style="width:380px;">
                             <div class="row align-items-center">
                                 <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
@@ -325,21 +323,18 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- </div> -->
+
                         <!-- card-4 -->
                     </div>
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div>
             </section>
-        </div>
-        <!-- Featured end-->
+        <!-- Featured END-->
 
-        <!-- Offers -->
-        <div class="container">
+        <!-- Offers START-->
+            <h3 class="text-secondary py-3">Offers</h3>
             <section class="slide-container swiper">
-                <h3 class="text-secondary">Offers</h3>
                 <div class="slide-content slide-content-md">
                     <div class="card-wrapper swiper-wrapper">
                         <!--card-1  -->
@@ -387,19 +382,31 @@
                             </div>
                         </div>
                         <!--card-3  -->
+                        <!--card-4  -->
+                        <div class="card-slide swiper-slide shadow" style="width:380px;">
+                            <div class="row align-items-center">
+                                <img class="col-6" src="images/50-percent-off-removebg-preview.png" />
+                                <div class="col-6 pt-2">
+                                    <p class="h4 fw-bolder text-uppercase">Rent From Anywhere</p>
+                                    <p class="text-secondary">
+                                        incidunt adipisci tempore maiores fuga nobis, impedit
+                                        quisquam repellat cumque culpa autem. Earum corporis in a
+                                        temporibus?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-4  -->
                     </div>
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div>
             </section>
-        </div>
 
-        <!--Offers -->
-        <!-- Why Choose Ghumi Ghumi  -->
+        <!--Offers END-->
 
-        <div class="container">
-            <h3 class="text-secondary">Why Choose Ghumi Ghumi</h3>
+        <!-- Why Choose Ghumi Ghumi START  -->
+            <h3 class="text-secondary py-5">Why Choose Ghumi Ghumi</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <div class="card bg-white p-2 my-2 shadow" style="border:0;">
@@ -447,13 +454,13 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--Why Choose Ghumi Ghumi -->
+        <!--Why Choose Ghumi Ghumi END-->
 
-        <div class="container my-5">
-            <h3 class="text-secondary">Frequently asked Questions</h3>
-            <div class="accordion" id="accordionExample">
+        
+            <!-- faqs START -->
+            <h3 class="text-secondary py-5">Frequently asked Questions</h3>
+            <div class="accordion pb-5" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -532,6 +539,7 @@
                     </div>
                 </div>
             </div>
+            <!-- faqs END -->
 
         </div>
 
@@ -748,6 +756,7 @@
             },
         },
     });
+
 </script>
 
 </html>
