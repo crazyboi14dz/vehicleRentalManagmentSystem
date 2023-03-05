@@ -55,6 +55,7 @@ body {
   background: var(--c-primary);
 }
 
+
 /*+++++ Slider container Start +++++*/
 
 ::-webkit-scrollbar {
@@ -884,6 +885,15 @@ body {
 }
 
 /* Back To Top end */
+
+
+.repeat-image{
+  background-image: url("../images/house-with-garden.png");
+  background-repeat: repeat-x;
+  display: list-item;
+  height: 50px;
+}
+
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++
 Footer Start
