@@ -1,0 +1,27 @@
+:root {
+    --c-primary: #47abff;
+    --c-dark: #000;
+    --c-white: #fff;
+    --c-grey: grey;
+    --fonts-title: "Futura PTM";
+  }
+#vehicle-port{
+    padding: 40px;
+    margin:0 auto;
+}
+.filter-button{
+    font-size:18px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    color: gray;
+}
+.filter-button:hover{
+    font-size: 18px;
+    text-align: center;
+    color: var(--c-primary);
+}
+.active-gallery{
+    background-color: lightblue;
+    color:var(--c-primary);
+}
