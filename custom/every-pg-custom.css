@@ -17,7 +17,18 @@ body {
 .theme-bg {
   background: var(--c-primary);
 }
-
+.btn-outline-theme{
+  /* background-color: var(--c-white); */
+  border: 2px solid var(--c-primary);
+  color: var(--c-primary);
+  cursor: pointer;
+}
+.btn-outline-theme:hover{
+  background: var(--c-primary);
+  color: var(--c-white);
+  cursor: pointer;
+  
+}
 .btn-theme {
   background: var(--c-primary);
   color: var(--c-white);
