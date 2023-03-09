@@ -70,12 +70,12 @@
                                         <!-- Services -->
                                         <!-- Booking  -->
                                         <li class="menu-item">
-                                            <a href="bookings.html">Bookings</a>
+                                            <a href="bookings.html">My Bookings</a>
                                         </li>
                                         <!-- Booking  -->
                                         <!--Blog  -->
                                         <li class="menu-item">
-                                            <a href="blog.html">Blog</a><i
+                                            <a href="#">Blog</a><i
                                                 class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
@@ -187,9 +187,18 @@
                         <p class="text-secondary">Vehicle Rental in India <img src="images/india.svg" width="20"
                                 class="position-relative" style="bottom: 2px;" alt="india-flag"> </p>
                     </div>
-                    <label for="city"><strong>Location</strong></label>
-                    <input type="text" name="city" id="city" class="form-control col-12 mb-3"
-                        placeholder="Select city" />
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="from-city"><strong>From</strong></label>
+                            <input type="text" name="from-city" id="from-city" class="form-control col-12 mb-3"
+                                placeholder="Which City" />
+                        </div>
+                        <div class="col-6">
+                            <label for="to-city"><strong>To</strong></label>
+                            <input type="text" name="to-city" id="to-city" class="form-control col-12 mb-3"
+                                placeholder="You Want To Go" />
+                        </div>
+                    </div>
                     <label for="pickup_date"><strong>Pick Up Date</strong></label>
                     <input type="date" name="pickup_date" id="pickup_date" class="col-6 form-control mb-3" />
                     <label for="return_date"><strong>Return Date</strong></label>
@@ -258,7 +267,7 @@
 
         <!-- Featured START -->
         <div class="container">
-            <h3 class="text-secondary pt-5">Featured</h3>
+            <h3 class="mt-5 section-title">Featured</h3>
             <section class="slide-container swiper">
                 <div class="slide-content   slide-content-md">
                     <div class="card-wrapper swiper-wrapper">
@@ -338,7 +347,7 @@
         <!-- Featured END-->
 
         <!-- Offers START-->
-            <h3 class="text-secondary py-3">Offers</h3>
+            <h3 class="my-3 section-title">Offers</h3>
             <section class="slide-container swiper">
                 <div class="slide-content slide-content-md">
                     <div class="card-wrapper swiper-wrapper">
@@ -411,7 +420,7 @@
         <!--Offers END-->
 
         <!-- Why Choose Ghumi Ghumi START  -->
-            <h3 class="text-secondary py-5">Why Choose Ghumi Ghumi</h3>
+            <h3 class="my-5 section-title">Why Choose Ghumi Ghumi</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <div class="card bg-white p-2 my-2 shadow" style="border:0;">
@@ -464,13 +473,13 @@
 
         
             <!-- faqs START -->
-            <h3 class="text-secondary py-5">Frequently asked Questions</h3>
+            <h3 class="my-5 section-title">FAQs</h3>
             <div class="accordion pb-5" id="accordionExample">
-                <div class="accordion-item">
+                <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Do you rent us to our Living place?
+                            1. Do you rent us to our Living place?
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -485,11 +494,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Do you love your clients?
+                            2. Do you love your clients?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -504,11 +513,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            What are your thoughts on your car are they better than other rental services cars?
+                            3. What are your thoughts on your car are they better than other rental services cars?
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -523,11 +532,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Do you wash your cars?
+                            4. Do you wash your cars?
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -766,7 +775,5 @@
 
 </script>
 
-</html>
-</body>
 
 </html>

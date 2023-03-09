@@ -47,6 +47,7 @@ body {
 }
 
 .section-title {
+  text-align: center;
   margin-bottom: 15px;
   padding: 0;
   position: relative;
@@ -58,14 +59,20 @@ body {
   text-align: center;
   border-radius: 4px;
   position: absolute;
-  bottom: -4px;
-  left: 0;
+  bottom: -11px;
+  left: 48%;
   width: 45px;
   height: 3px;
   display: inline-block;
   background: var(--c-primary);
 }
 
+/*+++++ Categories Services Start +++++*/
+#resize-categories{
+    background: rgba(197, 198, 196, 0.418);
+    cursor: col-resize;
+}
+/*+++++ Categories Services End +++++*/
 
 /*+++++ Slider container Start +++++*/
 
@@ -1244,7 +1251,7 @@ footer#pq-footer .pq-footer-style-1 .pq-footer-top {
   margin-bottom: 30px;
 }
 
-.pq-subscribe .col-xl-2.col-lg-4.col-md-4.center {
+.pq-subscribe .col-lg-4.col-md-4.center {
   border-left: 2px solid rgba(255, 255, 255, 0.1);
   border-right: 2px solid rgba(255, 255, 255, 0.1);
 }

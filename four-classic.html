@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>four-classic</title>
-    <!-- Bootstrap v5.3 -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="custom/every-pg-custom.css">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
+       <!-- Bootstrap v5.3 -->
+       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+       <!-- Custom CSS -->
+       <link rel="stylesheet" href="custom/every-pg-custom.css">
+        <!-- Services CSS -->
+       <link rel="stylesheet" href="custom/services.css">
+       <!-- fontawesome -->
+       <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
     <style>
 
 
@@ -77,7 +79,7 @@
                                         <!-- Booking  -->
                                         <!--Blog  -->
                                         <li class="menu-item">
-                                            <a href="blog.html">Blog</a><i
+                                            <a href="#">Blog</a><i
                                                 class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
@@ -145,48 +147,56 @@
 
 
         <div class="d-flex">
-            <div class="col-4 pt-3" style="background: rgba(197, 198, 196, 0.418);">
-                <!-- Four Wheeler START -->
-                <div class="mt-3 ps-3">
-                    <input type="checkbox" name="four-wheeler" id="four-wheeler">
-                    <label for="four-wheeler"><strong>Four Wheeler</strong></label>
-                </div>
-                <hr>
-                <div class="ps-3">
-                    <input type="checkbox" name="four-classic" id="four-classic" checked>
-                    <label for="four-classic">Classic</label>
-                </div>
-                <div class="ps-3">
-                    <input type="checkbox" name="four-traveller" id="four-traveller">
-                    <label for="four-traveller">Traveller</label>
-                </div>
-                <!-- Four Wheeler END -->
+            <div class="col-4" id="resize-categories">
+                <a class="filter-service ps-3 py-3 w-100 fs-5 text-decoration-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <i class="fa-solid fa-filter"></i> Filter
+                </a>
+                <div class="collapse" id="collapseExample">
 
-                <!-- Two Wheeler START -->
-                <div class="mt-5 ps-3">
-                    <input type="checkbox" name="two-wheeler" id="two-wheeler">
-                    <label for="two-wheeler"><strong>Two Wheeler</strong>
-                </div>
-                <hr>
-                <div class="ps-3">
-                    <input type="checkbox" name="two-classic" id="two-classic">
-                    <label for="two-classic">Classic</label>
-                </div>
-                <div class="ps-3">
-                    <input type="checkbox" name="two-sportz" id="two-sportz">
-                    <label for="two-sportz">Sportz</label>
-                </div>
-                <!-- Two Wheeler END -->
+                    <!-- Four Wheeler START -->
+                    <div class="mt-3 ps-3">
+                        <input type="checkbox" name="four-wheeler" id="four-wheeler">
+                        <label for="four-wheeler"><strong>Four Wheeler</strong></label>
+                    </div>
+                    <hr>
+                    <div class="ps-3">
+                        <input type="checkbox" name="four-classic" id="four-classic" checked>
+                        <label for="four-classic">Classic</label>
+                    </div>
+                    <div class="ps-3">
+                        <input type="checkbox" name="four-traveller" id="four-traveller">
+                        <label for="four-traveller">Traveller</label>
+                    </div>
+                    <!-- Four Wheeler END -->
 
-                <!-- Luxuries START -->
-                <div class="mt-5 ps-3">
-                    <input type="checkbox" name="luxuries" id="luxuries">
-                    <label for="luxuries"><strong>Luxuries</strong></label>
-                </div>
-                <hr>
-                <div class="ps-3">
-                    <input type="checkbox" name="luxuries-classic" id="luxuries-classic">
-                    <label for="luxuries-classic">Classic</label>
+                    <!-- Two Wheeler START -->
+                    <div class="mt-5 ps-3">
+                        <input type="checkbox" name="two-wheeler" id="two-wheeler">
+                        <label for="two-wheeler"><strong>Two Wheeler</strong>
+                    </div>
+                    <hr>
+                    <div class="ps-3">
+                        <input type="checkbox" name="two-classic" id="two-classic">
+                        <label for="two-classic">Classic</label>
+                    </div>
+                    <div class="ps-3">
+                        <input type="checkbox" name="two-sportz" id="two-sportz">
+                        <label for="two-sportz">Sportz</label>
+                    </div>
+                    <!-- Two Wheeler END -->
+
+                    <!-- Luxuries START -->
+                    <div class="mt-5 ps-3">
+                        <input type="checkbox" name="luxuries" id="luxuries">
+                        <label for="luxuries"><strong>Luxuries</strong></label>
+                    </div>
+                    <hr>
+                    <div class="ps-3">
+                        <input type="checkbox" name="luxuries-classic" id="luxuries-classic">
+                        <label for="luxuries-classic">Classic</label>
+                    </div>
                 </div>
             </div>
             <!-- Luxuries END -->
@@ -204,7 +214,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="view-vehicle.html" class="btn btn-primary">Go somewhere</a>
+                            <a href="view-vehicle.html" class="btn btn-theme">Go somewhere</a>
                         </div>
                     </div>
                     <!-- card-1 -->
@@ -217,7 +227,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="view-vehicle.html" class="btn btn-primary">Go somewhere</a>
+                            <a href="view-vehicle.html" class="btn btn-theme">Go somewhere</a>
                         </div>
                     </div>
                     <!-- card-2 -->
@@ -229,7 +239,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="view-vehicle.html" class="btn btn-primary">Go somewhere</a>
+                            <a href="view-vehicle.html" class="btn btn-theme">Go somewhere</a>
                         </div>
                     </div>
                     <!-- card-3 -->
@@ -241,7 +251,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="view-vehicle.html" class="btn btn-primary">Go somewhere</a>
+                            <a href="view-vehicle.html" class="btn btn-theme">Go somewhere</a>
                         </div>
                     </div>
                     <!-- card-4 -->
@@ -253,7 +263,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="view-vehicle.html" class="btn btn-primary">Go somewhere</a>
+                            <a href="view-vehicle.html" class="btn btn-theme">Go somewhere</a>
                         </div>
                     </div>
                     <!-- card-5 -->
@@ -265,7 +275,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="view-vehicle.html" class="btn btn-primary">Go somewhere</a>
+                            <a href="view-vehicle.html" class="btn btn-theme">Go somewhere</a>
                         </div>
                     </div>
                     <!-- card-6 -->
@@ -286,19 +296,6 @@
 
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
     <footer id="pq-footer">
@@ -404,7 +401,7 @@
                                                     placeholder="Your email address" />
                                             </div>
                                             <div class="col-lg-12">
-                                                <input type="submit" class="w-100 btn btn-primary" value="Subscribe" />
+                                                <input type="submit" class="w-100 btn btn-theme" value="Subscribe" />
                                             </div>
                                         </div>
                                     </form>
@@ -437,11 +434,13 @@
     </div>
     <!--Back To Top End-->
 </body>
+<!-- bootstrap js -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jquery js -->
 <script src="jquery/jquery-3.6.3.min.js"></script>
+<!-- custom js -->
 <script src="custom/every-pg-custom.js"></script>
-
-</html>
-
-</body>
+<!-- services js -->
+<script src="custom/services.js"></script>
 
 </html>
