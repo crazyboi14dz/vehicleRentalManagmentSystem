@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="custom/every-pg-custom.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
+    <style>
+        @media(min-width: 992px) {
+            .position-lg-absolute{
+                position: absolute !important
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -70,13 +77,12 @@
                                         <!-- Services -->
                                         <!-- Booking  -->
                                         <li class="menu-item">
-                                            <a href="bookings.html">My Bookings</a>
+                                            <a href="bookings.html">Bookings</a>
                                         </li>
                                         <!-- Booking  -->
                                         <!--Blog  -->
                                         <li class="menu-item">
-                                            <a href="#">Blog</a><i
-                                                class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <a href="#">Blog</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
                                                     <a href="about.html">About Us</a>
@@ -161,8 +167,59 @@
         </div> -->
         <!-- Search-form in mobile and tablet mode -->
 
+             <!-- Form START-->
+             <form action=""
+             class="col-lg-4 position-lg-absolute position-relative z-1 w-lg-25 w-md-100 py-3 px-2 bg-white ms-lg-5 mt-5 rounded shadow">
+
+             <div class="col-12 text-center py-2">
+                 <img src="images/ghumi2.png" alt="GHUMI-GHUMI" width="150">
+                 <p class="text-secondary">Vehicle Rental in India <img src="images/india.svg" width="20"
+                         class="position-relative" style="bottom: 2px;" alt="india-flag"> </p>
+             </div>
+             <div class="row">
+                 <div class="col-6">
+                     <label for="from-city"><strong>From</strong></label>
+                         <select class="form-select col-12 mb-3" name="from-city" id="from-city" aria-label="Which City" >
+                             <option selected>Which City</option>
+                             <option value="Vapi">Vapi</option>
+                             <option value="Silvassa">Silvassa</option>
+                             <option value="Bhilad">Bhilad</option>
+                         </select>
+                 </div>
+                 <div class="col-6">
+                     <label for="to-city"><strong>To</strong></label>
+                         <select class="form-select col-12 mb-3" name="to-city" id="to-city" aria-label="You Want To Go">
+                             <option selected>You Want To Go</option>
+                             <option value="Surat">Surat</option>
+                             <option value="Umargam">Umargam</option>
+                             <option value="Daman">Daman</option>
+                           </select>
+                 </div>
+             </div>
+             <label for="pickup_date"><strong>Pick Up Date</strong></label>
+             <input type="date" name="pickup_date" id="pickup_date" class="col-6 form-control mb-3" />
+             <label for="return_date"><strong>Return Date</strong></label>
+             <input type="date" name="return_date" id="return_date" class="col-6 form-control mb-3" />
+
+             <button type="button" class="col-12 btn  btn-theme mt-2">
+                 Search
+             </button>
+             <!-- <div class="row text-center position-relative" style="top: 8px;">
+                 <a class="col-6" href="https://play.google.com/">
+                     <img class="w-100" src="images/android-store.png" alt="android-store" >
+                 </a>
+             
+                 <a class="col-6" href="https://www.apple.com/">
+                     <img class="w-100"  src="images/ios-store.png" alt="ios-store">
+                 </a>
+         </div> -->
+         </form>
+         <!-- Form END-->
+
+
+
         <!-- carousel -->
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleRide" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
 
             <!-- <div class="container"> -->
             <div class="carousel-indicators mb-5 d-none d-lg-flex" style="margin-left: 45%">
@@ -175,52 +232,12 @@
             </div>
 
             <div class="carousel-inner">
-                <!-- Search-form -->
 
-                <!-- class added d-none , d-lg-block in form tag -->
-                <form action=""
-                    class="col-4 position-absolute z-1 w-lg-25 w-md-100 py-3 px-2 bg-white ms-lg-5 mt-lg-5 rounded shadow">
-                    <!-- style="margin: -25px 0px 20px 0px" -->
 
-                    <div class="col-12 text-center py-2">
-                        <img src="images/ghumi2.png" alt="GHUMI-GHUMI" width="150">
-                        <p class="text-secondary">Vehicle Rental in India <img src="images/india.svg" width="20"
-                                class="position-relative" style="bottom: 2px;" alt="india-flag"> </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="from-city"><strong>From</strong></label>
-                            <input type="text" name="from-city" id="from-city" class="form-control col-12 mb-3"
-                                placeholder="Which City" />
-                        </div>
-                        <div class="col-6">
-                            <label for="to-city"><strong>To</strong></label>
-                            <input type="text" name="to-city" id="to-city" class="form-control col-12 mb-3"
-                                placeholder="You Want To Go" />
-                        </div>
-                    </div>
-                    <label for="pickup_date"><strong>Pick Up Date</strong></label>
-                    <input type="date" name="pickup_date" id="pickup_date" class="col-6 form-control mb-3" />
-                    <label for="return_date"><strong>Return Date</strong></label>
-                    <input type="date" name="return_date" id="return_date" class="col-6 form-control mb-3" />
+                <div class="col-4">
 
-                    <button type="button" class="col-12 btn  btn-theme mt-2">
-                        Search
-                    </button>
-                    <!-- <div class="row text-center position-relative" style="top: 8px;">
-                        <a class="col-6" href="https://play.google.com/">
-                            <img class="w-100" src="images/android-store.png" alt="android-store" >
-                        </a>
-                    
-                        <a class="col-6" href="https://www.apple.com/">
-                            <img class="w-100"  src="images/ios-store.png" alt="ios-store">
-                        </a>
-                </div> -->
-                </form>
-
-                <!-- Search-form -->
-
-                <div class="carousel-item active" data-bs-interval="1500" >
+                </div>
+                <div class="carousel-item active" data-bs-interval="1500">
                     <img src="images/ST_LT_BG_3_3.png" class="d-block w-100" />
 
                     <div class="col-12 carousel-caption mb-5 d-none d-lg-block">
@@ -323,7 +340,7 @@
                         </div>
                         <!-- card-3 -->
                         <!-- card-4 -->
-                        
+
                         <div class="card-slide swiper-slide shadow " style="width:380px;">
                             <div class="row align-items-center">
                                 <img class="col-6" src="images/stand-boy-with-car-removebg-preview.png" />
@@ -344,9 +361,9 @@
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
             </section>
-        <!-- Featured END-->
+            <!-- Featured END-->
 
-        <!-- Offers START-->
+            <!-- Offers START-->
             <h3 class="my-3 section-title">Offers</h3>
             <section class="slide-container swiper">
                 <div class="slide-content slide-content-md">
@@ -417,9 +434,9 @@
                 <div class="swiper-button-prev swiper-navBtn"></div>
             </section>
 
-        <!--Offers END-->
+            <!--Offers END-->
 
-        <!-- Why Choose Ghumi Ghumi START  -->
+            <!-- Why Choose Ghumi Ghumi START  -->
             <h3 class="my-5 section-title">Why Choose Ghumi Ghumi</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-12">
@@ -469,9 +486,9 @@
                 </div>
             </div>
 
-        <!--Why Choose Ghumi Ghumi END-->
+            <!--Why Choose Ghumi Ghumi END-->
 
-        
+
             <!-- faqs START -->
             <h3 class="my-5 section-title">FAQs</h3>
             <div class="accordion pb-5" id="accordionExample">

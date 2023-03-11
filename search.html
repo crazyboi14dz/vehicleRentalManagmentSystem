@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEARCH FOR VEHICLES</title>
     <!-- Bootstrap v5.3 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="custom/every-pg-custom.css">
+    <link rel="stylesheet" href="custom/every-pg-custom.css" />
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
 </head>
@@ -66,14 +66,13 @@
                                         </li>
                                         <!-- Services -->
                                         <!-- Booking  -->
-                                        <li class="menu-item  current-menu-item">
+                                        <li class="menu-item">
                                             <a href="bookings.html">Bookings</a>
                                         </li>
                                         <!-- Booking  -->
                                         <!--Blog  -->
                                         <li class="menu-item">
-                                            <a href="#">Blog</a><i
-                                                class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <a href="#">Blog</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
                                                     <a href="about.html">About Us</a>
@@ -133,10 +132,47 @@
                 </div>
             </div>
         </div>
-
     </header>
     <main>
+        <!-- search form START -->
+        <div class="container p-5">
+            <form action="">
+                <div class="row p-3 theme-bg rounded">
+                    <!-- pickup-location START -->
+                    <div class="col-12  mt-2 col-lg-4">
+                        <i class="fa-solid fa-magnifying-glass position-absolute"
+                            style="margin-top: 30px;margin-left: 15px;"></i>
+                        <select class="form-select col-12 ps-5 py-4" name="pickup-location" id="pickup-location"
+                            aria-label="pickup-location">
+                            <option selected>&nbsp&nbsp&nbspPick-up location</option>
+                            <option value="Vapi">&nbsp&nbsp&nbspVapi</option>
+                            <option value="Silvassa">&nbsp&nbsp&nbspSilvassa</option>
+                            <option value="Bhilad">&nbsp&nbsp&nbspBhilad</option>
+                        </select>
+                    </div>
+                    <!-- pickup-location END -->
+                    <!-- pickup-date START -->
+                    <div class="col-6 mt-2 col-lg-3  text-center">
+                        <input type="date" class="form-control col-12 ps-5 py-4" name="pickup-date"
+                            placeholder="Pick-up Date" id="pickup-date" />
+                        <small class="text-light">Pick-up Date</small>
+                    </div>
 
+                    <!-- pickup-location END -->
+                    <!-- dropoff-date START -->
+                    <div class="col-6 mt-2 col-lg-3  text-center">
+                        <input type="date" class="form-control col-12 ps-5 py-4" name="dropoff-date"
+                            placeholder="Drop Date" id="dropoff-date" />
+                        <small class="text-light">Drop-off Date</small>
+                    </div>
+                    <!-- dropoff-date location END -->
+                    <div class="col-lg-2 col-12">
+                        <button class="btn btn-success mt-2 w-100" style="height:74px" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- search form END -->
     </main>
 
     <footer id="pq-footer">
@@ -166,9 +202,10 @@
                                         <img src="images/ghumi2.png" class="pq-footer-logo" alt="gym-footer-logo" />
                                         <p>
                                             Our motive is to provide the rides and tours in a
-                                            flexible price because living the life without
-                                            exploring other stuffs like an dumb is such ridiclous
-                                            thing you can do </p>
+                                            flexible price because living the life without exploring
+                                            other stuffs like an dumb is such ridiclous thing you
+                                            can do
+                                        </p>
                                         <div class="pq-footer-items">
                                             <i class="fa fa-phone-alt"></i>
                                             <div class="pq-footer-items-info">
@@ -267,8 +304,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 <!-- Jquery File -->
 <script src="jquery/jquery-3.6.3.min.js"></script>
