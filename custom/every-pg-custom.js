@@ -31,5 +31,13 @@ jQuery("#top").on("click", function () {
   );
   return false;
 });
-
+/*==================================================
+          [ Navbar menu 'active' ]
+          ==================================================*/
+$(document).ready(function () {
+  $(".menu-item").click(function () {
+    $('.menu-item').removeClass('current-menu-item')
+    $(this).closest('.menu-item').addClass('current-menu-item')
+  })
+})
 
