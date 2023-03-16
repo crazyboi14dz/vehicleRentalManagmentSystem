@@ -1466,7 +1466,7 @@ Login/Sign Up Modal START
   width: 380px;
   height: 500px;
   position: relative;
-  margin: 6% auto;
+  margin: 0% auto 5% auto;
   padding: 5px;
   overflow: hidden;
 }
@@ -1515,7 +1515,7 @@ Login/Sign Up Modal START
 }
 
 .input-group {
-  top: 150px;
+  top: 155px;
   position: absolute;
   width: 280px;
   transition: .5s;

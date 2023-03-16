@@ -17,8 +17,9 @@
     <script src="https://kit.fontawesome.com/33b91abd2b.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-    <!-- modal for signIn and signUp START -->
+     <!-- modal for signIn and signUp START -->
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
         tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -36,11 +37,17 @@
                         <i class="fa-brands fa-google   theme-bg text-light fs-4"></i>
                         <i class="fa-brands fa-facebook theme-bg text-light fs-4"></i>
                         <i class="fa-brands fa-github   theme-bg text-light fs-4"></i>
+                        <div class="d-flex justify-content-center align-items-center mt-2 text-secondary">
+                            <hr class="w-25">
+                            &nbsp;&nbsp;OR&nbsp;&nbsp;
+                            <hr class="w-25">
+                        </div>
                     </div>
                     <form id="login" class="input-group" action="">
                         <input type="text" class="input-field" name="" id="user-name" placeholder="User name or Email">
                         <input type="password" class="input-field" name="" id="user-password" placeholder="Password">
                         <button type="submit" class="btn btn-theme w-100 rounded">Sign In</button>
+                        <a href="#" class="text-decoration-none" style="color:#1a237e">Forget password?</a>
                     </form>
                     <form id="register" class="input-group" action="">
                         <input type="text" class="input-field" name="" id="full-name" placeholder="Full Name">
@@ -60,7 +67,7 @@
             </div>
 
         </div>
-    </div>
+    </div>   
     <!-- modal for signIn and signUp END -->
     <header>
         <div class="pq-bottom-header bg-white sticky-top shadow">
@@ -193,44 +200,46 @@
     </header>
     <main>
         <!-- search form START -->
-        <div class="container">
-            <h3 class="section-title mt-5">Search From Here </h3>
-            <form action="">
-                <!-- theme-bg rounded -->
-                <div class="row p-3 ">
-                    <!-- pickup-location START -->
-                    <div class="col-12  mt-2 col-lg-4">
-                        <i class="fa-solid fa-magnifying-glass position-absolute"
-                            style="margin-top: 30px;margin-left: 15px;"></i>
-                        <select class="form-select col-12 ps-5 py-4" name="pickup-location" id="pickup-location"
-                            aria-label="pickup-location">
-                            <option selected>&nbsp&nbsp&nbspPick-up location</option>
-                            <option value="Vapi">&nbsp&nbsp&nbspVapi</option>
-                            <option value="Silvassa">&nbsp&nbsp&nbspSilvassa</option>
-                            <option value="Bhilad">&nbsp&nbsp&nbspBhilad</option>
-                        </select>
+        <div class="theme-bg py-4">
+            <h3 class="text-white fw-bold text-center">Search From Here </h3>
+            <div class="container">
+                <form action="">
+                    <!-- theme-bg rounded -->
+                    <div class="row p-3 ">
+                        <!-- pickup-location START -->
+                        <div class="col-12  mt-2 col-lg-4">
+                            <i class="fa-solid fa-magnifying-glass position-absolute"
+                                style="margin-top: 30px;margin-left: 15px;"></i>
+                            <select class="form-select col-12 ps-5 py-4" name="pickup-location" id="pickup-location"
+                                aria-label="pickup-location">
+                                <option selected>&nbsp&nbsp&nbspPick-up location</option>
+                                <option value="Vapi">&nbsp&nbsp&nbspVapi</option>
+                                <option value="Silvassa">&nbsp&nbsp&nbspSilvassa</option>
+                                <option value="Bhilad">&nbsp&nbsp&nbspBhilad</option>
+                            </select>
+                        </div>
+                        <!-- pickup-location END -->
+                        <!-- pickup-date START -->
+                        <div class="col-6 mt-2 col-lg-3  text-center">
+                            <input type="date" class="form-control col-12 ps-5 py-4" name="pickup-date"
+                                placeholder="Pick-up Date" id="pickup-date"/>
+                            <small class="text-light">Pick-up Date</small>
+                        </div>
+    
+                        <!-- pickup-location END -->
+                        <!-- dropoff-date START -->
+                        <div class="col-6 mt-2 col-lg-3  text-center">
+                            <input type="date" class="form-control col-12 ps-5 py-4" name="dropoff-date"
+                                placeholder="Drop Date" id="dropoff-date" />
+                            <small class="text-light">Drop-off Date</small>
+                        </div>
+                        <!-- dropoff-date location END -->
+                        <div class="col-lg-2 col-12">
+                            <button class="btn btn-dark mt-2 w-100" style="height:74px" type="submit">Search</button>
+                        </div>
                     </div>
-                    <!-- pickup-location END -->
-                    <!-- pickup-date START -->
-                    <div class="col-6 mt-2 col-lg-3  text-center">
-                        <input type="date" class="form-control col-12 ps-5 py-4" name="pickup-date"
-                            placeholder="Pick-up Date" id="pickup-date" />
-                        <small class="text-dark">Pick-up Date</small>
-                    </div>
-
-                    <!-- pickup-location END -->
-                    <!-- dropoff-date START -->
-                    <div class="col-6 mt-2 col-lg-3  text-center">
-                        <input type="date" class="form-control col-12 ps-5 py-4" name="dropoff-date"
-                            placeholder="Drop Date" id="dropoff-date" />
-                        <small class="text-dark">Drop-off Date</small>
-                    </div>
-                    <!-- dropoff-date location END -->
-                    <div class="col-lg-2 col-12">
-                        <button class="btn btn-theme mt-2 w-100" style="height:74px" type="submit">Search</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <!-- search form END -->
 
@@ -505,8 +514,7 @@
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Custom JS -->
 <script src="custom/every-pg-custom.js"></script>
-<!-- ajax js -->
-<script src="custom/ajax.js"></script>
+ 
 <!-- Swiper JS -->
 <script src="swiper/swiper-bundle.min.js"></script>
 <script>

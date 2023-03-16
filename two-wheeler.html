@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>two-wheeler</title>
     <!-- Bootstrap v5.3 -->
-        <link rel="shortcut icon" href="images/ghumi.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/ghumi.png" type="image/x-icon">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="custom/every-pg-custom.css">
@@ -25,179 +25,182 @@
 <body>
     <!-- modal for signIn and signUp START -->
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-    tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="d-flex justify-content-end p-3">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="form-box">
-                <div class="toggle-box">
-                    <div id="toggle-btn-active"></div>
-                    <button class="toggle-btn " type="button" onclick="login()">Sign In</button>
-                    <button class="toggle-btn" type="button" onclick="register()">Sign Up</button>
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="d-flex justify-content-end p-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="social-icons">
-                    <i class="fa-brands fa-google   theme-bg text-light fs-4"></i>
-                    <i class="fa-brands fa-facebook theme-bg text-light fs-4"></i>
-                    <i class="fa-brands fa-github   theme-bg text-light fs-4"></i>
-                </div>
-                <form id="login" class="input-group" action="">
-                    <input type="text" class="input-field" name="" id="user-name"
-                        placeholder="User name or Email">
-                    <input type="password" class="input-field" name="" id="user-password"
-                        placeholder="Password">
-                    <button type="submit" class="btn btn-theme w-100 rounded">Sign In</button>
-                </form>
-                <form id="register" class="input-group" action="">
-                    <input type="text" class="input-field" name="" id="full-name" placeholder="Full Name">
-
-                    <input type="text" class="input-field" name="" id="user-name" placeholder="Username">
-                    <input type="email" class="input-field" name="" id="email" placeholder="Email">
-                    <input type="password" class="input-field" name="" id="user-password"
-                        placeholder="Password">
-                    <div class="agree-field">
-                        <input type="checkbox" name="" id="">
-                        <span>Agree to terms and conditions</span>
+                <div class="form-box">
+                    <div class="toggle-box">
+                        <div id="toggle-btn-active"></div>
+                        <button class="toggle-btn " type="button" onclick="login()">Sign In</button>
+                        <button class="toggle-btn" type="button" onclick="register()">Sign Up</button>
                     </div>
-                    <button type="submit" class="btn btn-theme w-100 rounded">Sign Up</button>
-                </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-google   theme-bg text-light fs-4"></i>
+                        <i class="fa-brands fa-facebook theme-bg text-light fs-4"></i>
+                        <i class="fa-brands fa-github   theme-bg text-light fs-4"></i>
+                        <div class="d-flex justify-content-center align-items-center mt-2 text-secondary">
+                            <hr class="w-25">
+                            &nbsp;&nbsp;OR&nbsp;&nbsp;
+                            <hr class="w-25">
+                        </div>
+                    </div>
+                    <form id="login" class="input-group" action="">
+                        <input type="text" class="input-field" name="" id="user-name" placeholder="User name or Email">
+                        <input type="password" class="input-field" name="" id="user-password" placeholder="Password">
+                        <button type="submit" class="btn btn-theme w-100 rounded">Sign In</button>
+                        <a href="#" class="text-decoration-none" style="color:#1a237e">Forget password?</a>
+                    </form>
+                    <form id="register" class="input-group" action="">
+                        <input type="text" class="input-field" name="" id="full-name" placeholder="Full Name">
+
+                        <input type="text" class="input-field" name="" id="user-name" placeholder="Username">
+                        <input type="email" class="input-field" name="" id="email" placeholder="Email">
+                        <input type="password" class="input-field" name="" id="user-password" placeholder="Password">
+                        <div class="agree-field">
+                            <input type="checkbox" name="" id="">
+                            <span>Agree to terms and conditions</span>
+                        </div>
+                        <button type="submit" class="btn btn-theme w-100 rounded">Sign Up</button>
+                    </form>
 
 
+                </div>
             </div>
+
         </div>
-
     </div>
-</div>
-<!-- modal for signIn and signUp END -->
+    <!-- modal for signIn and signUp END -->
     <header>
-    <div class="pq-bottom-header bg-white sticky-top shadow">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img class="img-fluid logo" src="images/ghumi2.png" alt="GHUMI-GHUMI" />
-                        </a>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div id="pq-menu-contain" class="pq-menu-contain">
-                                <ul id="pq-main-menu" class="navbar-nav ms-auto">
-                                    <li class="menu-item   menu-item-has-children">
-                                        <a href="index.html" aria-current="page">Home</a>
-                                    </li>
-                                    <!-- Search -->
-                                    <li class="menu-item">
-                                        <a href="search.html">Search</a>
-                                    </li>
-                                    <!-- Search -->
-                                    <!-- Services -->
-                                    <li class="menu-item current-menu-item">
-                                        <a href="services.html">Services</a><i
-                                            class="fa fa-chevron-down pq-submenu-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item menu-item-has-children">
-                                                <a href="four-wheeler.html">Four Wheeler</a><i
-                                                    class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item">
-                                                        <a href="four-classic.html">Classic</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="four-traveller.html">Traveller</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children current-menu-item">
-                                                <a href="two-wheeler.html">Two Wheelers</a>
-                                                <i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item">
-                                                        <a href="two-classic.html">Classic</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="two-sportz.html">Sportz</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="luxuries.html">Luxuries</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- Services -->
-                                    <!-- Booking  -->
-                                    <li class="menu-item">
-                                        <a href="bookings.html">Bookings</a>
-                                    </li>
-                                    <!-- Booking  -->
-                                    <!--Blog  -->
-                                    <li class="menu-item">
-                                        <a href="#">Blog</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item">
-                                                <a href="about.html">About Us</a>
-                                            </li>
+        <div class="pq-bottom-header bg-white sticky-top shadow">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-fluid logo" src="images/ghumi2.png" alt="GHUMI-GHUMI" />
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ms-auto">
+                                        <li class="menu-item   menu-item-has-children">
+                                            <a href="index.html" aria-current="page">Home</a>
+                                        </li>
+                                        <!-- Search -->
+                                        <li class="menu-item">
+                                            <a href="search.html">Search</a>
+                                        </li>
+                                        <!-- Search -->
+                                        <!-- Services -->
+                                        <li class="menu-item current-menu-item">
+                                            <a href="services.html">Services</a><i
+                                                class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="four-wheeler.html">Four Wheeler</a><i
+                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="four-classic.html">Classic</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="four-traveller.html">Traveller</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children current-menu-item">
+                                                    <a href="two-wheeler.html">Two Wheelers</a>
+                                                    <i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="two-classic.html">Classic</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="two-sportz.html">Sportz</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="luxuries.html">Luxuries</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- Services -->
+                                        <!-- Booking  -->
+                                        <li class="menu-item">
+                                            <a href="bookings.html">Bookings</a>
+                                        </li>
+                                        <!-- Booking  -->
+                                        <!--Blog  -->
+                                        <li class="menu-item">
+                                            <a href="#">Blog</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="about.html">About Us</a>
+                                                </li>
 
-                                            <li class="menu-item">
-                                                <a href="gallery.html">Gallery</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="faqs.html">Faqs</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!--  -->
-                                    <!-- Contact Us -->
-                                    <li class="menu-item">
-                                        <a href="contact-us.html">Contact Us</a>
-                                    </li>
-                                    <!--  -->
-                                </ul>
+                                                <li class="menu-item">
+                                                    <a href="gallery.html">Gallery</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="faqs.html">Faqs</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--  -->
+                                        <!-- Contact Us -->
+                                        <li class="menu-item">
+                                            <a href="contact-us.html">Contact Us</a>
+                                        </li>
+                                        <!--  -->
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- mobile-ui change -->
+                            <!-- mobile-ui change -->
 
-                        <div class="pq-menu-search-block me-md-5">
-                            <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
-                            <div class="pq-search-form">
-                                <form role="search" method="get" class="search-form" action="#">
-                                    <label>
-                                        <span class="screen-reader-text">Search for:</span>
-                                        <input type="search" class="input-field search-field" placeholder="Search …"
-                                            value="" name="s" />
-                                    </label>
-                                    <button type="submit" class="search-submit">
-                                        <span class="screen-reader-text">Search</span>
-                                    </button>
-                                </form>
+                            <div class="pq-menu-search-block me-md-5">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="fa fa-search"></i></a>
+                                <div class="pq-search-form">
+                                    <form role="search" method="get" class="search-form" action="#">
+                                        <label>
+                                            <span class="screen-reader-text">Search for:</span>
+                                            <input type="search" class="input-field search-field" placeholder="Search …"
+                                                value="" name="s" />
+                                        </label>
+                                        <button type="submit" class="search-submit">
+                                            <span class="screen-reader-text">Search</span>
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
-                            class="pq-button d-md-block d-none">
-                            <div class="pq-button-block">
-                                <span class="pq-button-line-left"></span>
-                                <span class="pq-button-text">Sign In</span>
-                                <span class="pq-button-line-right"></span>
-                                <i class="fa-sharp fa-solid fa-play"></i>
-                            </div>
-                        </a>
+                            <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                class="pq-button d-md-block d-none">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-line-left"></span>
+                                    <span class="pq-button-text">Sign In</span>
+                                    <span class="pq-button-line-right"></span>
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </a>
 
 
 
 
-                        <button class="navbar-toggler ms-3 border-0" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
+                            <button class="navbar-toggler ms-3 border-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
 
-                        <!-- mobile-ui change -->
-                    </nav>
+                            <!-- mobile-ui change -->
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </header>
     <main>
@@ -263,7 +266,7 @@
                 <div class="d-flex justify-content-center flex-wrap gap-4">
 
                     <!-- card-1 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -273,12 +276,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -288,7 +290,7 @@
                     <!-- card-1 -->
 
                     <!-- card-2 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -298,12 +300,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -312,7 +313,7 @@
                     </div>
                     <!-- card-2 -->
                     <!-- card-3 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -322,12 +323,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -336,7 +336,7 @@
                     </div>
                     <!-- card-3 -->
                     <!-- card-4 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -346,12 +346,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -360,7 +359,7 @@
                     </div>
                     <!-- card-4 -->
                     <!-- card-5 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -370,12 +369,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -384,7 +382,7 @@
                     </div>
                     <!-- card-5 -->
                     <!-- card-6 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -394,12 +392,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -408,7 +405,7 @@
                     </div>
                     <!-- card-6 -->
                     <!-- card-7 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -418,12 +415,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -432,7 +428,7 @@
                     </div>
                     <!-- card-7 -->
                     <!-- card-8 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -442,12 +438,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -456,7 +451,7 @@
                     </div>
                     <!-- card-8 -->
                     <!-- card-9 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -466,12 +461,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -480,7 +474,7 @@
                     </div>
                     <!-- card-9-->
                     <!-- card-10 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -490,12 +484,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -504,7 +497,7 @@
                     </div>
                     <!-- card-10 -->
                     <!-- card-11 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -514,12 +507,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -528,7 +520,7 @@
                     </div>
                     <!-- card-11 -->
                     <!-- card-12 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -538,12 +530,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -552,7 +543,7 @@
                     </div>
                     <!-- card-12 -->
                     <!-- card-13 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -562,12 +553,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -576,7 +566,7 @@
                     </div>
                     <!-- card-13 -->
                     <!-- card-14 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -586,12 +576,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -600,7 +589,7 @@
                     </div>
                     <!-- card-14 -->
                     <!-- card-15 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -610,12 +599,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -624,7 +612,7 @@
                     </div>
                     <!-- card-15 -->
                     <!-- card-16 -->
-                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card"   >
+                    <div class=" col-md-3 col-12 card shadow border-none width-vehicle-card">
                         <img src="images/luxury2.jpeg" class="card-img-top" alt="...">
                         <div class="card-body p-4">
                             <p class="h3 text-secondary">Swift X3</p>
@@ -634,12 +622,11 @@
                             </div>
 
                             <div class="row">
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-car-side theme-color"></i> 4 Seats</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-fan theme-color"></i> AC</p>
-                                <p class="col-6 text-secondary fs-5"><i
-                                        class="fa-solid fa-gear theme-color"></i> Auto</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-car-side theme-color"></i> 4
+                                    Seats</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-fan theme-color"></i> AC</p>
+                                <p class="col-6 text-secondary fs-5"><i class="fa-solid fa-gear theme-color"></i> Auto
+                                </p>
                                 <p class="col-6 text-secondary fs-5"><i
                                         class="fa-solid fa-suitcase-rolling theme-color"></i> 1</p>
                             </div>
@@ -810,7 +797,6 @@
 <script src="custom/every-pg-custom.js"></script>
 <!-- services js -->
 <script src="custom/services.js"></script>
-<!-- ajax js -->
-<script src="custom/ajax.js"></script>
+
 
 </html>
